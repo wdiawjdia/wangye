@@ -1,0 +1,43 @@
+
+		div.gs{
+			padding: 300px;
+		}
+		/*两个圆*/
+		.love{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			float: left;
+			border-radius: 50%;
+			animation: animate 1s infinite;
+		}
+		.love-left{
+			position: relative;
+			left: 100px;
+		}
+		/*做一个正方体与两个圆组合成心形*/
+		.sq{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			transform: rotate(45deg);
+			animation: animate 1s infinite;
+			position: relative;
+			top: 100px;
+			left: 200px;
+		}
+		/*定义动画*/
+		@keyframes animate{
+			0%{
+				transform: scale(0.8) rotate(45deg);
+				box-shadow: 0 0 100px red;		/*阴影*/
+			}
+			50%{
+				transform: scale(1) rotate(45deg);
+				box-shadow: 0 0 100px red;		/*阴影*/
+			}
+			100%{
+				transform: scale(0.8) rotate(45deg);
+				box-shadow: 0 0 100px red;		/*阴影*/
+			}
+		}
